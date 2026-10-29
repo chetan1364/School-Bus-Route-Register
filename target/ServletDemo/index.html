@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>School Bus Route Register</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f7f6;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .container {
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        width: 360px;
+    }
+    h2 {
+        text-align: center;
+        color: #333333;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    label {
+        font-weight: bold;
+        color: #555555;
+        font-size: 14px;
+    }
+    input[type="text"],
+    input[type="number"],
+    select {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 14px;
+    }
+    input[type="submit"] {
+        width: 100%;
+        background-color: #007bff;
+        color: white;
+        padding: 12px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        transition: background-color 0.2s ease;
+    }
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>School Bus Route Register Entry</h2>
+    <form action="result.jsp" method="post">
+        <label>Student:</label>
+        <input type="text" name="student" required>
+        
+        <label>Stop:</label>
+        <input type="text" name="stop" required>
+        
+        <label>Route:</label>
+        <select name="route">
+            <option>Route 1</option>
+            <option>Route 2</option>
+            <option>Route 3</option>
+        </select>
+        
+        <label>Monthly Fee:</label>
+        <input type="number" name="fee" required>
+        
+        <input type="submit" value="Save">
+    </form>
+</div>
+
+</body>
+</html>
