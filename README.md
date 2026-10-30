@@ -1,0 +1,1 @@
+School Bus Route Register is a web-based application designed to manage school bus routes and maintain student transportation records efficiently. It helps organize bus route details, manage student information, and simplify transportation management.
